@@ -1,0 +1,46 @@
+
+
+.col-md-6 {
+    border: 1px solid white;
+    margin: auto;
+    padding: 30px 30px 30px 30px;
+
+}
+
+p{
+    font-family: "URW Gothic";
+}
+
+#image{
+    height: 120%;
+    width: 120%;
+
+}
+
+.overlay{
+    background-color: black;
+    opacity:75%;
+    padding: 30px 30px 30px 30px;
+    border-radius: 10px;
+    margin-top: 40px;
+
+}
+
+#button{
+    background-color: #1d4f88;
+}
+
+#button1{
+    background-color: #1d4f88;
+}
+
+#button3{
+    background-color: #1d4f88;
+}
+
+h5{
+    border-bottom: 1px solid black;
+    font-weight: bold;
+    font-family: 'URW Bookman';
+}
+
