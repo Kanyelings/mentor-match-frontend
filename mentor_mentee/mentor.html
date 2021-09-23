@@ -5,22 +5,84 @@
     <meta  name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Mentor form</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="login_style.css">
 </head>
 <body>
 
 <div class="container">
-    <div>
         <div class="row">
 
-            <div class="col-md-6 no-gutters">
-                <h5>So you've decided to become a mentor!</h5>
+            <div class="col-md-6">
+                <h3>So you've decided to be a mentor!</h3>
+                <p> It's a great feat, and it's probably your first time.
+                But don't fret. We put up a few tips for you, in case you need a little help on how the mumbo jumbo goes.
+                </p>
+
+                <br>
+
+                <h5>Tips for the upcoming mentor in you.</h5>
+
 
             </div>
 
             <div class="col-md-6">
+                <form action="" method="POST" class="form">
+                    <div class="form-group">
 
+                        <div style="border-bottom: 1px solid #6c757d; padding: 11px 11px 11px 11px">
+                    <label for="name">Full name</label>
+                    <input type="text" id="name" placeholder="Enter your full name" class="form-control rounded-pill">
+                            <small class="form-text text-muted">It would be helpful, if you enter your name as stated on official documents.</small>
+                        </div>
+
+                        <br>
+
+                        <div style="border-bottom: 1px solid #6c757d; padding: 11px 11px 11px 11px">
+                    <p>Which department are you in?</p>
+                    <select name="devices" class="form-control rounded-pill custom-select">
+                        <option selected>Computer Engineering</option>
+                        <option value="civil">Civil Engineering and Architecture</option>
+                        <option value="electrical">Electrical and Electronic Engineering</option>
+                        <option value="mechanical">Mechanical Engineering</option>
+                        <option value="petroleum">Petroleum Engineering</option>
+                        <option value="chemical">Biotechnology and food process Engineering</option>
+                        <option value="medical">Biomedical Engineering and Medical equipment maintenance</option>
+                    </select>
+                        </div>
+
+                        <br>
+
+                        <div style="border-bottom: 1px solid #6c757d; padding: 11px 11px 11px 11px">
+                        <p>Gender</p>
+                        <input type="radio" name="gender" value="Female" checked="checked">Female
+                        <input type="radio" name="gender" value="male">Male
+                        </div>
+
+                        <br>
+
+                        <div style="border-bottom: 1px solid #6c757d; padding: 11px 11px 11px 11px" >
+                        <label for="level">Level</label>
+                        <input type="text" id="level" placeholder="Enter your level" class="form-control rounded-pill">
+                        </div>
+
+                        <br>
+
+                        <div style="border-bottom: 1px solid #6c757d; padding: 11px 11px 11px 11px" >
+                        <label for="contact">Whatsapp contact</label>
+                        <input type="tel" id="contact" placeholder="Enter your whatsapp number" class="form-control rounded-pill">
+                        </div>
+
+                        <br>
+                        <p>Describe yourself in four words</p>
+                        <textarea name="comments" placeholder="Describe on..." class="form-control rounded-pill"></textarea>
+
+
+                    </div>
+
+                </form>
 
             </div>
+
 
 
 
@@ -29,11 +91,6 @@
 
 
     </div>
-</div>
-
-
-
-
 
 </body>
 </html>
