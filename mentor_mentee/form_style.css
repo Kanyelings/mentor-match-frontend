@@ -1,18 +1,24 @@
 .form{
-    color: white;
+    color: black;
     font-family: "URW Gothic";
     font-weight: bold;
 }
 
-.body{
-    background-image: url("Images/1-1.jpg");
-    background-size: cover;
-    background-attachment: fixed;
+.overlay{
+    background-color: white;
+    opacity:90%;
+    padding: 30px 30px 30px 30px;
+    border-radius: 10px;
+    margin-top: 40px;
+
 
 }
 
+#button{
+    background-color: #135db1;
+}
 
-#image{
-    height: 120%;
-    width: 120%;
+#text{
+    color: white;
+    font-family: "DejaVu Sans";
 }
