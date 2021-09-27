@@ -5,10 +5,7 @@
   <meta  name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <title>Mentee form</title>
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/bootstrap/css/docs.min.css">
-  <link rel="stylesheet" href="form_style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInut.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+
 </head>
 <body class="body">
 <div class="jumbotron bg-cover" style="background-image: linear-gradient(to bottom, rgba(0,0,
@@ -21,37 +18,37 @@
 
     <div class="row justify-content-center">
 
-      <div class="overlay">
+      <div style="background-color: white;opacity: 90%;padding: 30px 30px 30px 30px;border-radius: 10px;margin-top: 40px">
         <div class="col-md-12">
           <small class="text-danger">Remember, that to fill in for this role, you must be a year 1 student.</small>
           <br><br>
 
-          <form action="" method="POST" class="form">
-            <div class="form-group">
+          <form action="" method="POST" style="color:black;font-family: 'URW Gothic'">
 
-              <div style="border-bottom: 1px solid #6c757d; padding: 11px 11px 11px 11px">
-                <label for="firstname">First name</label>
+
+              <div class="form-group">
+                <label for="firstname" class="font-weight-bold">First name</label>
                 <input type="text" id="firstname" placeholder="Enter your first name" class="form-control rounded-pill" required>
               </div>
 
               <br>
 
-              <div style="border-bottom: 1px solid #6c757d; padding: 11px 11px 11px 11px" >
-                <label for="lastname">Last name</label>
+              <div class="form-group">
+                <label for="lastname" class="font-weight-bold">Last name</label>
                 <input type="text" id="lastname" placeholder="Enter your last name" class="form-control rounded-pill" required>
               </div>
 
               <br>
 
-              <div style="border-bottom: 1px solid #6c757d; padding: 11px 11px 11px 11px" >
-                <label for="email">Email</label>
+              <div class="form-group" >
+                <label for="email" class="font-weight-bold">Email</label>
                 <input type="email" id="email" placeholder="Enter your email" class="form-control rounded-pill">
               </div>
 
               <br>
 
-              <div style="border-bottom: 1px solid #6c757d; padding: 11px 11px 11px 11px">
-                <p>Department</p>
+              <div class="form-group">
+                <p class="font-weight-bold">Department</p>
                 <select name="devices" class="form-control rounded-pill custom-select">
                   <option selected>Computer Engineering</option>
                   <option value="civil">Civil Engineering and Architecture</option>
@@ -65,22 +62,22 @@
 
               <br>
 
-              <div style="border-bottom: 1px solid #6c757d; padding: 11px 11px 11px 11px">
-                <p>Gender</p>
+              <div class="form-group">
+                <p class="font-weight-bold">Gender</p>
                 <input type="radio" name="gender" value="Female" checked="checked">Female
                 <input type="radio" name="gender" value="male">Male
               </div>
 
               <br>
 
-              <div style="border-bottom: 1px solid #6c757d; padding: 11px 11px 11px 11px">
-              <label for="contact">Whatsapp contact</label>
+              <div class="form-group">
+              <label for="contact" class="font-weight-bold">Whatsapp contact</label>
               <input type="tel" id="contact" placeholder="Whatsapp number" class="form-control rounded-pill" required>
               </div>
 
               <br>
 
-              <label for="contact">Previous school</label>
+              <label for="contact" class="font-weight-bold">Previous school</label>
               <input type="tel" id="school" placeholder="Previous school name" class="form-control rounded-pill" required>
 
 
@@ -89,7 +86,7 @@
               <div class="row">
                 <div class="col-md-12">
                   <div class="input-group">
-                    <a href="wait.html" class="btn btn-outline-light active font-weight-bolder text-white" id="button" type="submit">Submit</a>
+                    <a href="wait.html" class="btn btn-outline-light active font-weight-bolder text-white" style="background-color: #135db1" type="submit">Submit</a>
 
                   </div>
 
@@ -101,7 +98,7 @@
               <div class="row">
                 <div class="col-md-12">
                   <div class="input-group justify-content-end">
-                 <a href="welcome_mentee.html" class="btn btn-outline-light active font-weight-bolder text-white" id="button1">Welcome page</a>
+                 <a href="welcome_mentee.html" class="btn btn-outline-light active font-weight-bolder text-white" style="background-color: #135db1">Welcome page</a>
 
                   </div>
 
@@ -111,7 +108,7 @@
 
 
 
-            </div>
+
 
           </form>
 
@@ -128,10 +125,5 @@
 
 
 </body>
-<script>
-  const phoneInputField = document.querySelector("#contact");
-  const phoneInput = window.intlTelInput(phoneInputField,{
-    utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js",
-  });
-</script>
+
 </html>
