@@ -23,12 +23,13 @@
           <small class="text-danger">Remember, that to fill in for this role, you must be a year 1 student.</small>
           <br><br>
 
-          <form action="" method="POST" style="color:black;font-family: 'URW Gothic'">
+          <form action="" method="POST" style="color:black;font-family: 'URW Gothic'"  class="needs-validation" novalidate>
 
 
               <div class="form-group">
                 <label for="firstname" class="font-weight-bold">First name</label>
                 <input type="text" id="firstname" placeholder="Enter your first name" class="form-control rounded-pill" required>
+                  <div class="invalid-feedback">You must fill this field to continue.</div>
               </div>
 
               <br>
@@ -36,13 +37,15 @@
               <div class="form-group">
                 <label for="lastname" class="font-weight-bold">Last name</label>
                 <input type="text" id="lastname" placeholder="Enter your last name" class="form-control rounded-pill" required>
+                  <div class="invalid-feedback">You must fill this field to continue.</div>
               </div>
 
               <br>
 
               <div class="form-group" >
                 <label for="email" class="font-weight-bold">Email</label>
-                <input type="email" id="email" placeholder="Enter your email" class="form-control rounded-pill">
+                <input type="email" id="email" placeholder="Enter your email" class="form-control rounded-pill" required>
+                  <div class="invalid-feedback">Please enter a valid email address</div>
               </div>
 
               <br>
@@ -73,12 +76,14 @@
               <div class="form-group">
               <label for="contact" class="font-weight-bold">Whatsapp contact</label>
               <input type="tel" id="contact" placeholder="Whatsapp number" class="form-control rounded-pill" required>
+                  <div class="invalid-feedback">You must fill this field to continue.</div>
               </div>
 
               <br>
 
               <label for="contact" class="font-weight-bold">Previous school</label>
               <input type="tel" id="school" placeholder="Previous school name" class="form-control rounded-pill" required>
+              <div class="invalid-feedback">You must fill this field to continue.</div>
 
 
               <br>
@@ -86,7 +91,7 @@
               <div class="row">
                 <div class="col-md-12">
                   <div class="input-group">
-                    <a href="wait.html" class="btn btn-outline-light active font-weight-bolder text-white" style="background-color: #135db1" type="submit">Submit</a>
+                    <button class="btn btn-outline-light active font-weight-bolder text-white" style="background-color: #135db1" type="submit">Submit</button>
 
                   </div>
 
@@ -120,10 +125,24 @@
     </div>
   </div>
 </div>
-
-
-
-
 </body>
+<script>
+    (function (){
+        'use strict';
+        window.addEventListener('load',function (){
+            var forms = document.getElementsByClassName('needs-validation');
+            var validation = Array.prototype.filter.call(forms, function (form){
+                form.addEventListener('submit',function (event){
+                    if (form.checkValidity() == false){
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+            });
+
+        }, false);
+    })();
+</script>
 
 </html>
