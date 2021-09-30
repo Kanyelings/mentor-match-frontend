@@ -8,6 +8,8 @@
 
 </head>
 <body class="body">
+
+<!-- Makes the bg image to fade out to black-->
 <div class="jumbotron bg-cover" style="background-image: linear-gradient(to bottom, rgba(0,0,
         0,0.6) 0%, rgba(0,0,0,0.6)100%), url(Images/1-1.jpg);
         background-size: cover; background-attachment: fixed; background-position: center">
@@ -18,14 +20,18 @@
 
     <div class="row justify-content-center">
 
+        <!--Overlay to make the form stand out-->
+
       <div style="background-color: white;opacity: 90%;padding: 30px 30px 30px 30px;border-radius: 10px;margin-top: 40px">
         <div class="col-md-12">
           <small class="text-danger">Remember, that to fill in for this role, you must be a year 1 student.</small>
           <br><br>
 
+            <!--needs-validation is the class passed to the js script to validate the form-->
           <form action="" method="POST" style="color:black;font-family: 'URW Gothic'"  class="needs-validation" novalidate>
 
 
+              <!-- class="invalid-feedback" relays error message to user when verification criteria fails-->
               <div class="form-group">
                 <label for="firstname" class="font-weight-bold">First name</label>
                 <input type="text" id="firstname" placeholder="Enter your first name" class="form-control rounded-pill" required>
@@ -100,6 +106,7 @@
 
               <br>
 
+              <!--Link that takes user back to welcome page -->
               <div class="row">
                 <div class="col-md-12">
                   <div class="input-group justify-content-end">
@@ -127,10 +134,14 @@
 </div>
 </body>
 <script>
+    //self executing function
     (function (){
         'use strict';
         window.addEventListener('load',function (){
+            //fetch all the areas where we need to apply validation
             var forms = document.getElementsByClassName('needs-validation');
+
+            //Goes over form and prevents submission
             var validation = Array.prototype.filter.call(forms, function (form){
                 form.addEventListener('submit',function (event){
                     if (form.checkValidity() == false){
