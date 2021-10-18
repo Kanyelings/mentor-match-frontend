@@ -5,6 +5,7 @@
   <meta  name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <title>Mentee form</title>
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/style.css">
 
 </head>
 <body class="body">
@@ -18,14 +19,23 @@
 
   <div class="container">
 
-    <div class="row justify-content-center">
+    <div class="row-justify-content-center"style="display: flex; justify-content: center; align-items: center;">
 
         <!--Overlay to make the form stand out-->
 
-      <div style="background-color: white;opacity: 90%;padding: 30px 30px 30px 30px;border-radius: 10px;margin-top: 40px">
+      <div style="background-color: white;opacity: 90%;padding: 30px 30px 30px 30px;border-radius: 10px;margin-top: 40px;
+      width: 800px;">
         <div class="col-md-12">
           <small class="text-danger">Remember, that to fill in for this role, you must be a year 1 student.</small>
-          <br><br>
+          <br><br><br><br><br><br><br><br><br><br>
+
+
+          <div class="profile-pic">
+              <img src="Images/icon.jpg" id="photo">
+              <input type="file" id="file" required>
+              <label for="file" id="uploadBtn">Choose Photo</label>
+          </div>
+
 
             <!--needs-validation is the class passed to the js script to validate the form-->
           <form action="" method="POST" style="color:black;font-family: 'URW Gothic'"  class="needs-validation" novalidate>
@@ -133,6 +143,9 @@
   </div>
 </div>
 </body>
+
+<script src="assets/bootstrap/js/app.js"></script>
+
 <script>
     //self executing function
     (function (){
